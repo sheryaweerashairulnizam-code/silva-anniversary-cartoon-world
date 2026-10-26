@@ -66,15 +66,14 @@
               <div class="doodle doodle--star doodle--star-a" aria-hidden="true">✦</div>
               <div class="doodle doodle--star doodle--star-b" aria-hidden="true">✧</div>
               <div class="doodle doodle--heart" aria-hidden="true">♡</div>
-              <div class="pororo-holder pororo-holder--hero pororo-slot" role="img" aria-label="Pororo melambakan tangan"></div>
+              <div class="pororo-holder pororo-holder--hero pororo-slot" role="img" aria-label="Pororo melambaikan tangan"></div>
               <div class="ground-shadow" aria-hidden="true"></div>
-              <div class="speech-bubble">eehe
-<br /><strong>we did it!</strong></div>
+              <div class="speech-bubble">ehehe<br /><strong>we did it!</strong></div>
             </div>
           </div>
-          </div>
-          <div class="bottom-note">scroll? nooo, tap the buttons! <span>→</span></div>
+          <div class="bottom-note">scroll? nooo, tap the buttons! <span>↓</span></div>
         </section>
+
         <section class="screen screen--game" id="screen-game" data-screen="game" aria-labelledby="gameTitle" hidden>
           <div class="screen-inner narrow-inner">
             <div class="section-tag"><span>02</span> TINY GAME ZONE</div>
@@ -85,13 +84,14 @@
             <div class="section-actions"><button class="button button--outline" data-go="home" type="button">← back</button><button class="button button--primary" data-next="tap" type="button">next surprise <span>→</span></button></div>
           </div>
         </section>
+
         <section class="screen screen--tap" id="screen-tap" data-screen="tap" aria-labelledby="tapTitle" hidden>
           <div class="screen-inner narrow-inner tap-layout">
             <div class="section-tag"><span>03</span> PORORO CHECK-IN</div>
             <h2 id="tapTitle">TAP <span>PORORO!</span></h2>
             <p class="center-copy">dia mau bilang sesuatu, tapi cuma kalau kamu ketuk dulu 👀</p>
-            <div class="tap-stage" id="pororoStage"><div class="tap-spark spark-a" aria-hidden="true">✤</div><div class="tap-spark spark-b" aria-hidden="true">♥</div><div class="tap-spark spark-c" aria-hidden="true">✧</div><button class="pororo-button pororo-slot" id="pororoButton" type="button" aria-label="Ketuk Pororo"></button><div class="tap-shadow" aria-hidden="true"></div></div>
-            <div class="reaction-card" aria-live="polite"><span class="reaction-label">PORORO SAYS</span><strong id="reactionText">ketuk aku dongggg!</strong><span class="tap-count" id="tapCount">taps: 0</span></div>
+            <div class="tap-stage" id="pororoStage"><div class="tap-spark spark-a" aria-hidden="true">✦</div><div class="tap-spark spark-b" aria-hidden="true">♡</div><div class="tap-spark spark-c" aria-hidden="true">✧</div><button class="pororo-button pororo-slot" id="pororoButton" type="button" aria-label="Ketuk Pororo"></button><div class="tap-shadow" aria-hidden="true"></div></div>
+            <div class="reaction-card" aria-live="polite"><span class="reaction-label">PORORO SAYS</span><strong id="reactionText">ketuk aku donggg!</strong><span class="tap-count" id="tapCount">taps: 0</span></div>
             <div class="section-actions"><button class="button button--outline" data-go="game" type="button">← back</button><button class="button button--primary" data-next="letter" type="button">next surprise <span>→</span></button></div>
           </div>
         </section>
@@ -113,7 +113,7 @@
             <h2 id="giftsTitle">PICK A <span>GIFT!</span></h2>
             <p class="center-copy">tiga kotak, tiga kejutan. pilih yang paling bikin penasaran.</p>
             <div class="gift-grid"><button class="gift-box gift-box--one" type="button" data-gift="1"><span class="gift-ribbon"></span><span class="gift-lid"></span><span class="gift-body"></span><strong>01</strong><small>tiny note</small></button><button class="gift-box gift-box--two" type="button" data-gift="2"><span class="gift-ribbon"></span><span class="gift-lid"></span><span class="gift-body"></span><strong>02</strong><small>blue magic</small></button><button class="gift-box gift-box--three" type="button" data-gift="3"><span class="gift-ribbon"></span><span class="gift-lid"></span><span class="gift-body"></span><strong>03</strong><small>secret mail</small></button></div>
-            <div class="gift-result" id="giftResult" aria-live="politive"><span class="gift-result-icon">✦</span><div><strong>pili satu kotak dulu</strong><span>hasil kejutannya bakal muncul di sini</span></div></div>
+            <div class="gift-result" id="giftResult" aria-live="polite"><span class="gift-result-icon">✦</span><div><strong>pilih satu kotak dulu</strong><span>hasil kejutannya bakal muncul di sini.</span></div></div>
             <div class="section-actions"><button class="button button--outline" data-go="letter" type="button">← back</button><button class="button button--primary" data-next="quiz" type="button">take the quiz <span>→</span></button></div>
           </div>
         </section>
@@ -125,7 +125,9 @@
             <div class="quiz-card" id="quizCard"><span class="question-number" id="questionNumber">Q1</span><h3 id="questionText">loading a tiny question...</h3><div class="quiz-options" id="quizOptions"></div><button class="button button--dark quiz-next" id="quizNextButton" type="button" disabled>pilih jawaban <span>→</span></button></div>
             <div class="quiz-result-card" id="quizResultCard" hidden><div class="quiz-trophy">✦</div><span>FINAL RESULT</span><strong id="quizResultTitle">you two are a perfect little team!</strong><p id="quizResultText">yang penting bukan skor, tapi kamu masih di sini sama aku hehe.</p><button class="button button--primary" id="quizRestartButton" type="button">ulang quiz</button></div>
             <div class="section-actions"><button class="button button--outline" data-go="gifts" type="button">← back</button><button class="button button--primary" data-next="secret" type="button">find the secret <span>→</span></button></div>
-          </div>          </section>
+          </div>
+        </section>
+
         <section class="screen screen--secret" id="screen-secret" data-screen="secret" aria-labelledby="secretTitle" hidden>
           <div class="screen-inner narrow-inner secret-layout">
             <div class="secret-stars" aria-hidden="true"><span>✦</span><span>✧</span><span>✦</span><span>·</span><span>✧</span></div>
@@ -138,11 +140,12 @@
             <div class="section-actions"><button class="button button--outline button--light-outline" data-go="quiz" type="button">← back</button></div>
           </div>
         </section>
+
         <section class="screen screen--final" id="screen-final" data-screen="final" aria-labelledby="finalTitle" hidden>
           <div class="confetti-layer" id="finalConfetti" aria-hidden="true"></div>
           <div class="screen-inner narrow-inner final-layout">
-            <div class="final-label">✦: ALL DONE! ✦</div>
-            <div class="pororo-holder pororo-holder--final pororo-slot" role="img" aria-label="Pororo melambakan tang"></div>
+            <div class="final-label">✦ ALL DONE! ✦</div>
+            <div class="pororo-holder pororo-holder--final pororo-slot" role="img" aria-label="Pororo melambaikan tangan"></div>
             <div class="final-speech">bye bye, Silva!</div>
             <h2 id="finalTitle">YOU UNLOCKED<br /><span>ALL MY LOVE!!</span> <b>💙</b></h2>
             <p>makasih udah main sampai akhir hehe. happy 2 months, Silva! semoga kita punya banyak cerita seru dan bahagia bersama.</p>
@@ -160,9 +163,10 @@
     </main>
 
     <div class="music-modal" id="musicModal" hidden role="dialog" aria-modal="false" aria-labelledby="musicTitle">
-      <div class="music-modal-card"><div class="music-modal-head"><div><span class="section-tag section-tag--small"><span>♫</span> OFFICIAL SOURCE</span><h2 id="musicTitle">our little soundtrack</h2></div><button class="close-small" id="closeMusicButton" type="button" aria-label="Tutup kontrol musik">×</button></div><p>“love.” by wave to earth — diputar dari video lyric resmi sehingga tidak ada file musik yang diunduh atau hosted di website ini.</p><div class="music-controls"><button class="button button--primary" id="musicPlayButton" type="button">▶ play our song</button><label class="volume-control"><span>volume</span><input id="volumeSlider" type="range" min="0" max="100" value="35" /><output id="volumeOutput">35%</output></label></div><a class="official-link" href="https://www.youtube.com/watch?v=Q49pnA4jsp8" target="_blank" rel="noopener noreferrer">buka versi resmi di YouTube ↓</a><div class="youtube-audio-frame" aria-hidden="true"><div id="youtubePlayer"></div></div></div>
+      <div class="music-modal-card"><div class="music-modal-head"><div><span class="section-tag section-tag--small"><span>♫</span> OFFICIAL SOURCE</span><h2 id="musicTitle">our little soundtrack</h2></div><button class="close-small" id="closeMusicButton" type="button" aria-label="Tutup kontrol musik">×</button></div><p>“love.” by wave to earth — diputar dari video lyric resmi, jadi tidak ada file musik yang diunduh atau di-host di website ini.</p><div class="music-controls"><button class="button button--primary" id="musicPlayButton" type="button">▶ play our song</button><label class="volume-control"><span>volume</span><input id="volumeSlider" type="range" min="0" max="100" value="35" /><output id="volumeOutput">35%</output></label></div><a class="official-link" href="https://www.youtube.com/watch?v=Q49pnA4jsp8" target="_blank" rel="noopener noreferrer">buka versi resmi di YouTube ↗</a><div class="youtube-audio-frame" aria-hidden="true"><div id="youtubePlayer"></div></div></div>
     </div>
-    <div class="date-modal" id="dateModal" hidden role="dialog" aria-modal="true" aria-labelledby="dateModalTitle"><div class="date-modal-card"><button class="close-small" id="closeDateButton" type="button" aria-label="Tutup">×</button><span class="section-tag section-tag--small"><span>✎</span> EDITABLE</span><h2 id="dateModalTitle">tanggal spesial kalian?</h2><p>isi tanggal anniversary kamu di sini. nggak akan disimpan ke mana-mana.</p><input id="dateInput" type="text" placeholder="contoh: 14 Februari 2025" autocomplete="off" /><div class="modal-actions"><button class="button button--outline" id="cancelDateButton" type="button">cancel</button><button class="button button--primary" id="saveDateButton">save date <span>✔</span></button></div></div></div>
+
+    <div class="date-modal" id="dateModal" hidden role="dialog" aria-modal="true" aria-labelledby="dateModalTitle"><div class="date-modal-card"><button class="close-small" id="closeDateButton" type="button" aria-label="Tutup">×</button><span class="section-tag section-tag--small"><span>✎</span> EDITABLE</span><h2 id="dateModalTitle">tanggal spesial kalian?</h2><p>isi tanggal anniversary kamu di sini. nggak akan disimpan ke mana-mana.</p><input id="dateInput" type="text" placeholder="contoh: 14 Februari 2025" autocomplete="off" /><div class="modal-actions"><button class="button button--outline" id="cancelDateButton" type="button">cancel</button><button class="button button--primary" id="saveDateButton" type="button">save date <span>✓</span></button></div></div></div>
 
     <div class="toast" id="toast" role="status" aria-live="polite"><span id="toastIcon">✦</span><span id="toastText">saved!</span></div>
     <div class="confetti-layer confetti-layer--global" id="globalConfetti" aria-hidden="true"></div>
