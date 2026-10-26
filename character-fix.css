@@ -1,0 +1,12 @@
+.penguin-face { left:17px; top:31px; width:74px; height:60px; border-radius:50% 50% 44% 44%; background:#f3f8fa; border:3px solid #0c2133; }
+.penguin-face::before,.penguin-face::after{content:"";position:absolute;z-index:4;top:31px;width:20px;height:13px;border:3px solid #f49a2d;border-radius:50%;background:rgba(255,191,76,.18)}
+.penguin-face::before{left:13px}.penguin-face::after{left:42px}
+
+.goth-face { left:24px; top:30px; width:62px; height:70px; border-radius:45% 45% 47% 47%; background:#f1d4cc; border:3px solid #160d14; z-index:3; }
+.goth-face::before{content:"";position:absolute;z-index:4;left:-3px;top:-5px;width:62px;height:25px;background:#0d0e14;clip-path:polygon(0 0,100% 0,84% 100%,62% 58%,47% 100%,27% 58%,12% 100%)}
+.goth-hair { position:absolute; z-index:2; left:14px; top:5px; width:80px; height:78px; border-radius:48% 48% 30% 30%; background:#0d0e14; border:3px solid #07080d; }
+.goth-hair::before,.goth-hair::after{content:"";position:absolute;top:52px;width:21px;height:75px;border:3px solid #07080d;border-radius:50%;background:repeating-linear-gradient(135deg,#0d0e14 0 8px,#272832 8px 12px)}
+.goth-hair::before{left:-18px;transform:rotate(8deg)}.goth-hair::after{right:-18px;transform:rotate(-8deg)}
+
+.stage-name.name-silva small::after { content:" · chibi penguin"; }
+.stage-name.name-me small::after { content:" · Wednesday vibe"; }
