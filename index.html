@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0b11" />
+  <meta name="description" content="Sebuah film kartun mini tentang dua dunia yang bertemu: biru salju dan maroon gothic." />
+  <title>Our Little Cartoon World — Silva & Aku</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-noise" aria-hidden="true"></div>
+  <div class="ambient-stars ambient-stars-a" aria-hidden="true"></div>
+  <div class="ambient-stars ambient-stars-b" aria-hidden="true"></div>
+
+  <header class="site-chrome" id="siteChrome" aria-label="Kontrol cerita">
+    <a class="brand-mark" href="#intro" data-go="intro" aria-label="Kembali ke intro">
+      <span class="brand-heart">♡</span>
+      <span>silva <i>&</i> aku</span>
+    </a>
+    <div class="header-actions">
+      <button class="chrome-button" id="editModeButton" type="button" aria-pressed="false">
+        <span aria-hidden="true">✎</span> Edit teks
+      </button>
+      <button class="chrome-button" id="musicButton" type="button" aria-pressed="false">
+        <span aria-hidden="true">♫</span> Musik off
+      </button>
+    </div>
+  </header>
+
+  <main id="app" class="app-shell">
+    <!-- INTRO -->
+    <section class="screen-panel active intro-screen" id="screen-intro" data-screen="intro" aria-labelledby="introTitle">
+      <div class="intro-split" aria-hidden="true">
+        <div class="intro-world intro-winter">
+          <div class="world-label"><span class="dot dot-blue"></span> dunia Silva</div>
+          <div class="cloud cloud-1"></div><div class="cloud cloud-2"></div>
+          <div class="snow-pile snow-pile-a"></div><div class="snow-pile snow-pile-b"></div>
+          <div class="sun-disc"></div>
+          <div class="intro-penguin mini-penguin">
+            <span class="helmet-rim"></span><span class="helmet-top"></span><span class="penguin-face"></span>
+            <span class="penguin-eye eye-a"></span><span class="penguin-eye eye-b"></span><span class="penguin-beak"></span>
+            <span class="penguin-body"></span><span class="penguin-belly"></span><span class="penguin-foot foot-a"></span><span class="penguin-foot foot-b"></span>
+          </div>
+          <div class="snow-dots"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="intro-world intro-gothic">
+          <div class="world-label"><span class="dot dot-maroon"></span> dunia aku</div>
+          <div class="moon-disc"></div><div class="gothic-cloud cloud-3"></div>
+          <div class="bat bat-one">⌁</div><div class="bat bat-two">⌁</div>
+          <div class="gothic-house"><span class="house-roof"></span><span class="house-body"></span><span class="house-window window-a"></span><span class="house-window window-b"></span><span class="house-door"></span></div>
+          <div class="intro-goth mini-goth">
+            <span class="goth-hair"></span><span class="goth-face"></span><span class="goth-eye eye-a"></span><span class="goth-eye eye-b"></span><span class="goth-dress"></span><span class="goth-collar"></span><span class="goth-shoe shoe-a"></span><span class="goth-shoe shoe-b"></span>
+          </div>
+          <div class="rose-branch"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+      <div class="intro-copy story-card">
+        <div class="eyebrow"><span class="tiny-star">✦</span> a tiny anniversary tale <span class="tiny-star">✦</span></div>
+        <h1 id="introTitle">Once upon a time,<br /><em>two different worlds met...</em></h1>
+        <p class="intro-subtitle" data-editable="true">One loves blue, the other loves maroon. Somehow, they found each other. ♡</p>
+        <div class="intro-divider"><span>✦</span><i></i><span>♡</span><i></i><span>✦</span></div>
+        <button class="primary-button large-button" type="button" data-go="anniversary">Masuk ke cerita kami! <span aria-hidden="true">→</span></button>
+        <p class="scroll-hint"><span class="mouse-icon"></span> tekan tombolnya, lalu ikuti episode kami</p>
+      </div>
+      <div class="corner-sticker sticker-snow" aria-hidden="true">brrr!<span>❄</span></div>
+      <div class="corner-sticker sticker-bat" aria-hidden="true">heh!<span>⌁</span></div>
+    </section>
+
+    <!-- ANNIVERSARY -->
+    <section class="screen-panel anniversary-screen winter-gothic-screen" id="screen-anniversary" data-screen="anniversary" aria-labelledby="anniversaryTitle" hidden>
+      <div class="screen-orbit orbit-one" aria-hidden="true"></div><div class="screen-orbit orbit-two" aria-hidden="true"></div>
+      <div class="screen-inner anniversary-inner">
+        <div class="section-heading centered-heading">
+          <p class="chapter-tag"><span>chapter 01</span> · the day we met in the middle</p>
+          <h2 id="anniversaryTitle">Happy 2 Monthsary,<br /><strong data-editable="true">Silva!</strong> <span class="title-heart">♡</span></h2>
+          <p class="section-lead" data-editable="true">Dua bulan mungkin baru permulaan, tapi aku senang karena cerita ini dimulai dengan kamu.</p>
+        </div>
+        <div class="anniversary-grid">
+          <div class="anniversary-note paper-note">
+            <div class="paper-tape"></div>
+            <span class="note-kicker">catatan episode</span>
+            <h3>Hari kecil yang ingin kuingat.</h3>
+            <label class="date-label" for="anniversaryDate">Tanggal anniversary kalian</label>
+            <input id="anniversaryDate" class="date-input" type="date" aria-describedby="dateHint" />
+            <p class="date-hint" id="dateHint">Pilih tanggalnya sendiri—aku sengaja tidak mengarangnya. ✦</p>
+            <div class="note-scribble">blue + maroon<br /><b>= us</b></div>
+          </div>
+          <div class="anniversary-stage cartoon-stage">
+            <div class="stage-caption"><span class="caption-dot blue-dot"></span> dua dunia, satu frame</div>
+            <div class="stage-sky">
+              <div class="stage-star star-1">✦</div><div class="stage-star star-2">✦</div><div class="stage-star star-3">✧</div>
+              <div class="stage-cloud cloud-left"></div><div class="stage-cloud cloud-right"></div>
+              <div class="stage-moon"></div>
+              <div class="stage-ground"></div>
+              <div class="character character-penguin hero-penguin" aria-label="Karakter kecil dunia Silva">
+                <span class="helmet-rim"></span><span class="helmet-top"></span><span class="penguin-face"></span><span class="penguin-eye eye-a"></span><span class="penguin-eye eye-b"></span><span class="penguin-beak"></span><span class="penguin-body"></span><span class="penguin-belly"></span><span class="penguin-wing wing-a"></span><span class="penguin-wing wing-b"></span><span class="penguin-foot foot-a"></span><span class="penguin-foot foot-b"></span>
+              </div>
+              <div class="character character-goth hero-goth" aria-label="Karakter kecil dunia aku">
+                <span class="goth-hair"></span><span class="goth-face"></span><span class="goth-eye eye-a"></span><span class="goth-eye eye-b"></span><span class="goth-nose"></span><span class="goth-dress"></span><span class="goth-collar"></span><span class="goth-arm arm-a"></span><span class="goth-arm arm-b"></span><span class="goth-shoe shoe-a"></span><span class="goth-shoe shoe-b"></span>
+              </div>
+              <div class="floating-heart heart-blue">♥</div><div class="floating-heart heart-maroon">♥</div>
+              <div class="sparkle-squiggle">〰</div>
+            </div>
+            <div class="stage-name name-silva"><b>Silva</b><small>blue side</small></div>
+            <div class="stage-name name-me"><b>aku</b><small>maroon side</small></div>
+          </div>
+          <div class="anniversary-actions">
+            <div class="photo-card">
+              <div class="photo-preview" id="photoPreview"><span class="photo-icon">♡</span><span>foto kalian<br /><small>(opsional)</small></span></div>
+              <label class="upload-button" for="photoInput">Tambah foto</label>
+              <input id="photoInput" type="file" accept="image/*" hidden />
+              <p>Foto hanya tersimpan di perangkat ini.</p>
+            </div>
+            <button class="primary-button" type="button" data-go="story">Buka episode pertama <span>→</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="screen-panel story-screen winter-gothic-screen" id="screen-story" data-screen="story" aria-labelledby="storyTitle" hidden>
+      <div class="screen-inner story-inner">
+        <div class="section-heading story-heading">
+          <p class="chapter-tag"><span>chapter 02</span> · a cartoon story</p>
+          <div class="story-title-row"><h2 id="storyTitle">Episode 01: Salju turun!</h2><span class="story-counter" id="storyCounter">01 / 04</span></div>
+          <div class="story-progress"><span id="storyProgressBar"></span></div>
+        </div>
+        <div class="story-layout">
+          <div class="storybook-page" id="storyStage">
+            <div class="story-scene scene-winter active" data-scene="0">
+              <div class="scene-sun"></div><div class="scene-cloud cloud-a"></div><div class="scene-cloud cloud-b"></div><div class="scene-mountain mountain-a"></div><div class="scene-mountain mountain-b"></div><div class="scene-floor snow-floor"></div>
+              <div class="story-character penguin-story"><span class="helmet-rim"></span><span class="helmet-top"></span><span class="penguin-face"></span><span class="penguin-eye eye-a"></span><span class="penguin-eye eye-b"></span><span class="penguin-beak"></span><span class="penguin-body"></span><span class="penguin-belly"></span><span class="penguin-wing wing-a"></span><span class="penguin-foot foot-a"></span><span class="penguin-foot foot-b"></span></div>
+              <div class="speech-bubble bubble-blue">Hari ini langitnya biru banget!</div>
+              <div class="snowfall snowfall-story"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="story-scene scene-gothic" data-scene="1">
+              <div class="scene-night-moon"></div><div class="scene-cloud dark-cloud cloud-a"></div><div class="scene-cloud dark-cloud cloud-b"></div><div class="story-castle"><span class="tower tower-a"></span><span class="tower tower-b"></span><span class="castle-body"></span><span class="castle-window window-a"></span><span class="castle-window window-b"></span><span class="castle-door"></span></div><div class="story-floor maroon-floor"></div>
+              <div class="story-character goth-story"><span class="goth-hair"></span><span class="goth-face"></span><span class="goth-eye eye-a"></span><span class="goth-eye eye-b"></span><span class="goth-nose"></span><span class="goth-dress"></span><span class="goth-collar"></span><span class="goth-arm arm-a"></span><span class="goth-arm arm-b"></span><span class="goth-shoe shoe-a"></span><span class="goth-shoe shoe-b"></span></div>
+              <div class="speech-bubble bubble-maroon">Hmm... ada yang memanggil dari jauh.</div><div class="story-bat bat-story-one">⌁</div><div class="story-bat bat-story-two">⌁</div>
+            </div>
+            <div class="story-scene scene-door" data-scene="2">
+              <div class="door-glow"></div><div class="door-arch"><span class="door-frame"></span><span class="door-inside"></span><span class="door-knob"></span><span class="door-star">✦</span></div><div class="door-spark spark-a">✦</div><div class="door-spark spark-b">✧</div>
+              <div class="story-character penguin-story door-penguin"><span class="helmet-rim"></span><span class="helmet-top"></span><span class="penguin-face"></span><span class="penguin-eye eye-a"></span><span class="penguin-eye eye-b"></span><span class="penguin-beak"></span><span class="penguin-body"></span><span class="penguin-belly"></span><span class="penguin-foot foot-a"></span><span class="penguin-foot foot-b"></span></div>
+              <div class="story-character goth-story door-goth"><span class="goth-hair"></span><span class="goth-face"></span><span class="goth-eye eye-a"></span><span class="goth-eye eye-b"></span><span class="goth-nose"></span><span class="goth-dress"></span><span class="goth-collar"></span><span class="goth-shoe shoe-a"></span><span class="goth-shoe shoe-b"></span></div>
+              <div class="speech-bubble bubble-door">Satu pintu. Dua dunia. <b>Halo!</b></div>
+            </div>
+            <div class="story-scene scene-together" data-scene="3">
+              <div class="blend-sky"></div><div class="blend-moon"></div><div class="blend-cloud"></div><div class="blend-floor"></div><div class="blend-star star-a">✦</div><div class="blend-star star-b">✧</div><div class="blend-star star-c">✦</div>
+              <div class="story-character penguin-story together-penguin"><span class="helmet-rim"></span><span class="helmet-top"></span><span class="penguin-face"></span><span class="penguin-eye eye-a"></span><span class="penguin-eye eye-b"></span><span class="penguin-beak"></span><span class="penguin-body"></span><span class="penguin-belly"></span><span class="penguin-foot foot-a"></span><span class="penguin-foot foot-b"></span></div>
+              <div class="story-character goth-story together-goth"><span class="goth-hair"></span><span class="goth-face"></span><span class="goth-eye eye-a"></span><span class="goth-eye eye-b"></span><span class="goth-nose"></span><span class="goth-dress"></span><span class="goth-collar"></span><span class="goth-shoe shoe-a"></span><span class="goth-shoe shoe-b"></span></div>
+              <div class="together-heart heart-blue">♥</div><div class="together-heart heart-maroon">♥</div><div class="speech-bubble bubble-together">Ternyata jalan terbaik adalah <b>berjalan berdua.</b></div>
+            </div>
+          </div>
+          <div class="story-script">
+            <span class="script-label">narator:</span>
+            <p id="storyText" data-editable="true">Di sebuah negeri biru, seorang penguin kecil sedang menghitung kepingan salju yang jatuh satu-satu.</p>
+            <div class="script-note"><span>✎</span> setiap episode boleh kamu ubah sesukamu</div>
+            <button class="primary-button" id="storyNext" type="button">Lanjut cerita <span>→</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LETTER -->
+    <section class="screen-panel letter-screen winter-gothic-screen" id="screen-letter" data-screen="letter" aria-labelledby="letterTitle" hidden>
+      <div class="letter-backdrop-bat bat-letter-a" aria-hidden="true">⌁</div><div class="letter-backdrop-bat bat-letter-b" aria-hidden="true">⌁</div>
+      <div class="screen-inner letter-inner">
+        <div class="section-heading centered-heading">
+          <p class="chapter-tag"><span>chapter 03</span> · sealed with a little heart</p>
+          <h2 id="letterTitle">Surat cinta rahasia</h2>
+          <p class="section-lead">Ada sesuatu kecil di dalam amplop ini. Klik segelnya pelan-pelan, ya.</p>
+        </div>
+        <div class="letter-layout">
+          <button class="envelope-button" id="envelopeButton" type="button" aria-expanded="false" aria-controls="letterPaper">
+            <span class="envelope-shadow"></span><span class="envelope-body"></span><span class="envelope-flap"></span><span class="envelope-letter-line"></span><span class="envelope-seal">♥</span><span class="envelope-label">untuk Silva</span>
+          </button>
+          <article class="letter-paper" id="letterPaper" aria-hidden="true">
+            <div class="paper-corner">✦</div><p class="letter-date">episode ke-02</p>
+            <h3>Hai, Silva.</h3>
+            <div class="letter-body" data-editable="true">
+              <p>Aku cuma mau bilang: aku bersyukur banget bisa kenal kamu. Dua bulan ini mungkin kelihatannya singkat, tapi ada banyak momen kecil yang diam-diam jadi penting buat aku.</p>
+              <p>Aku suka cara kamu bikin hari biasa terasa lebih seru. Bahkan hal-hal sederhana—ngobrol, saling cerita, atau cuma tahu kamu ada—bisa bikin aku senyum sendiri.</p>
+              <p>Semoga kita terus belajar saling memahami, saling jaga, dan bikin banyak kenangan yang bisa kita ceritakan lagi nanti. Terima kasih sudah jadi bagian spesial dari ceritaku.</p>
+            </div>
+            <p class="letter-sign">dari aku, yang senang berjalan di dunia yang sama denganmu <span>♡</span></p>
+          </article>
+        </div>
+        <button class="text-button next-under" type="button" data-go="map">Lanjut lihat dunia kecil kita <span>→</span></button>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="screen-panel map-screen winter-gothic-screen" id="screen-map" data-screen="map" aria-labelledby="mapTitle" hidden>
+      <div class="screen-inner map-inner">
+        <div class="section-heading centered-heading">
+          <p class="chapter-tag"><span>chapter 04</span> · our cartoon world</p>
+          <h2 id="mapTitle">Peta dunia kecil kita</h2>
+          <p class="section-lead">Tekan tiga tempat ini. Masing-masing menyimpan satu pesan rahasia.</p>
+        </div>
+        <div class="map-layout">
+          <div class="map-board" aria-label="Peta interaktif dunia Silva dan aku">
+            <div class="map-skyline"></div><div class="map-cloud map-cloud-a"></div><div class="map-cloud map-cloud-b"></div>
+            <div class="map-snowland"><span class="snowhill hill-a"></span><span class="snowhill hill-b"></span><span class="ice-star">✦</span></div>
+            <div class="map-gothland"><span class="goth-hill hill-a"></span><span class="goth-hill hill-b"></span><span class="map-moon">☾</span><span class="map-bat">⌁</span></div>
+            <div class="map-bridge"><span>♡</span></div>
+            <div class="map-castle"><span class="map-tower tower-left"></span><span class="map-tower tower-right"></span><span class="map-castle-body"></span><span class="map-castle-window"></span><span class="map-castle-door"></span></div>
+            <div class="map-igloo"><span></span><i></i></div>
+            <button class="map-location location-blue" type="button" data-map-message="Di sini warna biru selalu punya tempat spesial—apalagi kalau yang memilihnya Silva. ❄" aria-label="Buka pesan dunia salju">❄<small>snowy side</small></button>
+            <button class="map-location location-castle" type="button" data-map-message="Di kastil ini, mawar maroon tumbuh tiap kali aku ingat kamu. Jangan takut gelap, ada kamu di sini. ♡" aria-label="Buka pesan kastil gothic">✦<small>gothic nook</small></button>
+            <button class="map-location location-bridge" type="button" data-map-message="Jembatan ini cuma punya satu aturan: siapa pun yang lewat harus membawa satu cerita untuk dibagi berdua. ✨" aria-label="Buka pesan jembatan hati">♡<small>our bridge</small></button>
+            <div class="map-route route-one"></div><div class="map-route route-two"></div>
+          </div>
+          <aside class="map-message-card" aria-live="polite">
+            <div class="map-message-icon" id="mapMessageIcon">♡</div>
+            <span class="note-kicker">pesan dari peta</span>
+            <h3 id="mapMessageTitle">Pilih sebuah tempat</h3>
+            <p id="mapMessage">Salju, kastil, atau jembatan? Klik salah satunya untuk membuka pesan kecil.</p>
+          </aside>
+        </div>
+        <button class="text-button next-under" type="button" data-go="love">Buka kartu-kartu kecil <span>→</span></button>
+      </div>
+    </section>
+
+    <!-- LOVE CARDS -->
+    <section class="screen-panel love-screen winter-gothic-screen" id="screen-love" data-screen="love" aria-labelledby="loveTitle" hidden>
+      <div class="screen-inner love-inner">
+        <div class="section-heading centered-heading">
+          <p class="chapter-tag"><span>chapter 05</span> · tiny reasons</p>
+          <h2 id="loveTitle">Things I love about you</h2>
+          <p class="section-lead">Klik kartunya untuk membalik. Aktifkan <b>Edit teks</b> kalau mau mengganti kata-katanya.</p>
+        </div>
+        <div class="love-cards" id="loveCards">
+          <article class="flip-card card-blue" tabindex="0" role="button" aria-pressed="false">
+            <div class="flip-inner"><div class="flip-face flip-front"><span class="card-number">01</span><div class="sticker sticker-cloudy">☁</div><div class="mini-card-penguin"><span class="mini-helmet"></span><span class="mini-face"></span><i></i><b></b></div><h3>cara kamu hadir</h3><span class="flip-hint">klik untuk lihat ♡</span></div><div class="flip-face flip-back"><span class="card-number">01 / back</span><div class="back-sparkle">✦</div><p data-editable="true">Karena kamu punya cara sendiri untuk membuat hariku lebih baik.</p><span class="back-sign">— dari aku</span></div></div>
+          </article>
+          <article class="flip-card card-maroon" tabindex="0" role="button" aria-pressed="false">
+            <div class="flip-inner"><div class="flip-face flip-front"><span class="card-number">02</span><div class="sticker sticker-rose">✿</div><div class="mini-card-goth"><span class="mini-goth-hair"></span><span class="mini-goth-face"></span><i></i><b></b><em></em></div><h3>momen kecil kita</h3><span class="flip-hint">klik untuk lihat ♡</span></div><div class="flip-face flip-back"><span class="card-number">02 / back</span><div class="back-sparkle">✧</div><p data-editable="true">Karena aku senang bisa mengenal kamu, pelan-pelan, hari demi hari.</p><span class="back-sign">— dari aku</span></div></div>
+          </article>
+          <article class="flip-card card-night" tabindex="0" role="button" aria-pressed="false">
+            <div class="flip-inner"><div class="flip-face flip-front"><span class="card-number">03</span><div class="sticker sticker-star">✦</div><div class="mini-card-together"><span class="mini-together-blue"></span><span class="mini-together-maroon"></span><i>♡</i></div><h3>cerita yang dipilih</h3><span class="flip-hint">klik untuk lihat ♡</span></div><div class="flip-face flip-back"><span class="card-number">03 / back</span><div class="back-sparkle">♥</div><p data-editable="true">Karena kamu adalah bagian spesial dari ceritaku—dan aku ingin lanjut ke halaman berikutnya.</p><span class="back-sign">— dari aku</span></div></div>
+          </article>
+        </div>
+        <button class="primary-button centered-button" type="button" data-go="quiz">Mainkan kuis pasangan <span>→</span></button>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="screen-panel quiz-screen winter-gothic-screen" id="screen-quiz" data-screen="quiz" aria-labelledby="quizTitle" hidden>
+      <div class="screen-inner quiz-inner">
+        <div class="section-heading centered-heading">
+          <p class="chapter-tag"><span>chapter 06</span> · a very important quiz</p>
+          <h2 id="quizTitle">Siapa yang lebih...?</h2>
+          <p class="section-lead">Jawab sejujur-jujurnya. Jawaban paling benar biasanya yang paling manis.</p>
+        </div>
+        <div class="quiz-card">
+          <div class="quiz-topline"><span id="quizStep">pertanyaan 1 dari 3</span><span class="quiz-score" id="quizScore">♡ 0 benar</span></div>
+          <div class="quiz-question-wrap">
+            <div class="quiz-doodle">?</div>
+            <h3 id="quizQuestion">Siapa yang suka biru?</h3>
+            <div class="quiz-options" id="quizOptions"></div>
+            <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
+          </div>
+          <button class="primary-button quiz-next" id="quizNext" type="button" disabled>Lanjut pertanyaan <span>→</span></button>
+        </div>
+        <div class="quiz-decoration deco-blue">♥</div><div class="quiz-decoration deco-maroon">✦</div>
+      </div>
+    </section>
+
+    <!-- SECRET BOX -->
+    <section class="screen-panel box-screen winter-gothic-screen" id="screen-box" data-screen="box" aria-labelledby="boxTitle" hidden>
+      <div class="screen-inner box-inner">
+        <div class="section-heading centered-heading">
+          <p class="chapter-tag"><span>chapter 07</span> · one last little surprise</p>
+          <h2 id="boxTitle">Secret love box</h2>
+          <p class="section-lead">Ada satu harta karun terakhir. Buka kalau kamu siap menerima hati biru + maroon.</p>
+        </div>
+        <div class="treasure-area">
+          <div class="treasure-spark sparkle-left">✦</div><div class="treasure-spark sparkle-right">✧</div>
+          <button class="treasure-box" id="treasureBox" type="button" aria-expanded="false" aria-controls="treasureMessage"><span class="box-lid"></span><span class="box-body"></span><span class="box-lock">♡</span><span class="box-stripe stripe-blue"></span><span class="box-stripe stripe-maroon"></span><span class="box-label">open me</span></button>
+          <div class="treasure-heart" id="treasureHeart">♥</div>
+          <div class="treasure-message" id="treasureMessage" aria-live="polite"><p data-editable="true">Kalau cerita kita adalah kartun, aku ingin tetap menjadi bagian dari setiap episode bersamamu, Silva. ♡</p></div>
+        </div>
+        <button class="text-button next-under" type="button" data-go="final">Lihat adegan terakhir <span>→</span></button>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="screen-panel final-screen" id="screen-final" data-screen="final" aria-labelledby="finalTitle" hidden>
+      <div class="final-sky" aria-hidden="true"><div class="final-snow-side"></div><div class="final-goth-side"></div><div class="final-moon"></div><div class="final-stars">✦　✧　✦　✧　✦</div><div class="final-cloud"></div><div class="final-bats">⌁　　⌁</div></div>
+      <div class="final-ground" aria-hidden="true"></div>
+      <div class="final-characters" aria-hidden="true">
+        <div class="final-character final-penguin"><span class="helmet-rim"></span><span class="helmet-top"></span><span class="penguin-face"></span><span class="penguin-eye eye-a"></span><span class="penguin-eye eye-b"></span><span class="penguin-beak"></span><span class="penguin-body"></span><span class="penguin-belly"></span><span class="penguin-foot foot-a"></span><span class="penguin-foot foot-b"></span></div>
+        <div class="final-character final-goth"><span class="goth-hair"></span><span class="goth-face"></span><span class="goth-eye eye-a"></span><span class="goth-eye eye-b"></span><span class="goth-nose"></span><span class="goth-dress"></span><span class="goth-collar"></span><span class="goth-shoe shoe-a"></span><span class="goth-shoe shoe-b"></span></div>
+        <div class="final-heart heart-blue">♥</div><div class="final-heart heart-maroon">♥</div>
+      </div>
+      <div class="final-copy">
+        <p class="eyebrow"><span class="tiny-star">✦</span> the end of episode two, not the end of us <span class="tiny-star">✦</span></p>
+        <h2 id="finalTitle">Your blue,<br /><em>my maroon,</em><br />our little world. ♡</h2>
+        <p class="final-message" data-editable="true">Terima kasih sudah menjadi bagian dari ceritaku, Silva. Selamat 2 bulan, sayang. Semoga kita punya banyak episode indah yang bisa kita tulis bersama.</p>
+        <div class="final-actions"><button class="primary-button large-button" type="button" data-go="intro" id="replayButton">Putar cerita lagi <span>↻</span></button><button class="ghost-button" type="button" id="finalEditButton">Edit pesan akhir <span>✎</span></button></div>
+        <p class="final-credit">dibuat dengan salju, kelelawar kecil, dan banyak rasa sayang</p>
+      </div>
+    </section>
+  </main>
+
+  <nav class="chapter-nav" id="chapterNav" aria-label="Navigasi episode" hidden>
+    <button type="button" class="nav-dot active" data-go="anniversary" aria-label="Bab anniversary"><span>01</span></button>
+    <i></i><button type="button" class="nav-dot" data-go="story" aria-label="Bab cerita"><span>02</span></button>
+    <i></i><button type="button" class="nav-dot" data-go="letter" aria-label="Bab surat"><span>03</span></button>
+    <i></i><button type="button" class="nav-dot" data-go="map" aria-label="Bab peta"><span>04</span></button>
+    <i></i><button type="button" class="nav-dot" data-go="love" aria-label="Bab kartu cinta"><span>05</span></button>
+    <i></i><button type="button" class="nav-dot" data-go="quiz" aria-label="Bab kuis"><span>06</span></button>
+    <i></i><button type="button" class="nav-dot" data-go="box" aria-label="Bab kotak rahasia"><span>07</span></button>
+    <i></i><button type="button" class="nav-dot" data-go="final" aria-label="Bab akhir"><span>08</span></button>
+  </nav>
+
+  <div class="edit-tip" id="editTip" role="status" aria-live="polite"><span>✎</span> Mode edit aktif — klik teks yang ingin kamu ubah.</div>
+  <script src="app.js"></script>
+</body>
+</html>
